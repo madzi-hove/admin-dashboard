@@ -14,7 +14,17 @@
 
 <body>
     <header class="header">
-        <div>search bar and name div</div>
+        <div>
+            <div>
+                <label for="search"></label>
+                <input type="search" id="search" name="search">
+            </div>
+            <div>
+                <span class="material-symbols-outlined">
+                    notifications_active
+                </span>
+            </div>
+        </div>
         <div> icon name nav buttons</div>
     </header>
     <aside class="sidebar">
@@ -27,18 +37,54 @@
             </h1>
         </header>
         <div class="tools sidebar__item">
-            <ul>
-                <li><a href="#" target="_blank">home</a></li>
-                <li><a href="#" target="_blank">profile</a></li>
-                <li><a href="#" target="_blank">messages</a></li>
-                <li><a href="#" target="_blank">history</a></li>
-                <li><a href="#" target="_blank">tasks</a></li>
-                <li><a href="#" target="_blank">communities</a></li>
+            <ul class="sidebar__list">
+                <li class="list__item"><a href="#" target="_blank"><span class="material-symbols-outlined">
+                            house
+                        </span>
+                        <span class="sidebar__text">home</span>
+                    </a></li>
+                <li class="list__item"><a href="#" target="_blank"><span class="material-symbols-outlined">
+                            person
+                        </span>
+                        <span class="sidebar__text">profile</span>
+                    </a></li>
+                <li class="list__item"><a href="#" target="_blank"><span class="material-symbols-outlined">
+                            mode_comment
+                        </span>
+                        <span class="sidebar__text">messages</span>
+                    </a></li>
+                <li class="list__item"><a href="#" target="_blank"><span class="material-symbols-outlined">
+                            history
+                        </span>
+                        <span class="sidebar__text">history</span>
+                    </a></li>
+                <li class="list__item"><a href="#" target="_blank"><span class="material-symbols-outlined">
+                            task
+                        </span>
+                        <span class="sidebar__text">tasks</span>
+                    </a></li>
+                <li class="list__item"><a href="#" target="_blank"><span class="material-symbols-outlined">
+                            groups
+                        </span>
+                        <span class="sidebar__text">communities</span>
+                    </a></li>
             </ul>
-            <ul>
-                <li><a href="#">settings</a></li>
-                <li><a href="#">support</a></li>
-                <li><a href="#">privacy</a></li>
+            <ul class="sidebar__lis">
+                <li class="list__item"><a href="#"><span class="material-symbols-outlined">
+                            settings
+                        </span>
+                        <span class="sidebar__text">settings</span>
+                    </a></li>
+                <li class="list__item"><a href="#"><span class="material-symbols-outlined">
+                            help_center
+                        </span>
+                        <span class="sidebar__text">support</span>
+                    </a></li>
+                <li class="list__item"><a href="#"><span class="material-symbols-outlined">
+                            lock
+                        </span>
+                        <span class="sidebar__text">privacy</span>
+                    </a></li>
             </ul>
         </div>
         <div class="settings sidebar__item"></div>
