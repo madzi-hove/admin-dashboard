@@ -7,25 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="css/style.css">
     <title>Admin dashboard</title>
 </head>
 
 <body>
     <header class="header">
-        <div>
+        <div class="header__item">
             <div>
-                <label for="search"></label>
+                <label for="search"><span class="material-symbols-outlined">
+                        search
+                    </span></label>
                 <input type="search" id="search" name="search">
             </div>
             <div>
                 <span class="material-symbols-outlined">
                     notifications_active
                 </span>
+                <img class="avatar" src="images/avatar/woman-head-dark.svg" alt="">
+                <span class="username">morgan oakley</span>
             </div>
+
         </div>
-        <div> icon name nav buttons</div>
+        <div class="header__item">
+            <div class="user">
+                <img src="images/avatar/woman-head-dark.svg" alt="" class="avatar avatar--big">
+                <div>
+                    <p>Hi there</p>
+                    <span class="username username--big">morgan oakley</span>
+                    <span class="user__handle">@morgan</span>
+
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="#">Nav-item</a></li>
+                    <li><a class="nav__link" href="#">Nav-item</a></li>
+                    <li><a class="nav__link" href="#">Nav-item</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <aside class="sidebar">
         <header class="sidebar__head sidebar__item">
@@ -69,7 +91,7 @@
                         <span class="sidebar__text">communities</span>
                     </a></li>
             </ul>
-            <ul class="sidebar__lis">
+            <ul class="sidebar__list">
                 <li class="list__item"><a href="#"><span class="material-symbols-outlined">
                             settings
                         </span>
@@ -89,11 +111,11 @@
         </div>
         <div class="settings sidebar__item"></div>
     </aside>
-    <article class="content">
+    <section class="content">
+        <div class="projects"></div>
+        <div class="announcement"></div>
         <div></div>
-        <div></div>
-        <div></div>
-    </article>
+    </section>
 
 </body>
 
