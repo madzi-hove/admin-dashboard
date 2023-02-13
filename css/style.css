@@ -1,4 +1,6 @@
 /* icons */
+/* General dashboard styles */
+
 .material-symbols-outlined {
 	font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
@@ -17,7 +19,7 @@ body {
 .header {
 	grid-column: col-start 3 / span 11;
 	grid-row: row-start;
-	background-color: blue;
+	background-color: white;
 }
 
 .sidebar {
@@ -29,5 +31,40 @@ body {
 .content {
 	grid-column: col-start 3 / span 11;
 	grid-row: row-start 2 / span 11;
-	background-color: beige;
+	background-color: lightcyan;
 }
+
+/* header styles */
+
+.header div {
+	border: 1px solid red;
+}
+
+.header__item {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid blue;
+}
+
+#search {
+	margin: 0.5rem 0;
+}
+.avatar {
+	block-size: 25px;
+}
+
+.user {
+	display: flex;
+	align-items: center;
+}
+
+.nav {
+	border: 1px solid red;
+}
+
+.nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* sidebar styles */
