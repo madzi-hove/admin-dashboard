@@ -15,36 +15,36 @@
 <body>
     <header class="header">
         <div class="header__item">
-            <div>
-                <label for="search"><span class="material-symbols-outlined">
+            <div class="search">
+                <button class="search__btn"><span class="search__icon material-symbols-outlined">
                         search
-                    </span></label>
-                <input type="search" id="search" name="search">
+                    </span></button>
+                <input type="search" id="searchbar" name="searchbar">
             </div>
-            <div>
-                <span class="material-symbols-outlined">
+            <div class="notification">
+                <span class=" notification__icon material-symbols-outlined">
                     notifications_active
                 </span>
-                <img class="avatar" src="images/avatar/woman-head-dark.svg" alt="">
-                <span class="username">morgan oakley</span>
+                <img class="avatar" src="images/avatar/woman-head-dark.svg" alt="profile icon">
+                <span class="user__name">morgan oakley</span>
             </div>
 
         </div>
         <div class="header__item">
             <div class="user">
-                <img src="images/avatar/woman-head-dark.svg" alt="" class="avatar avatar--big">
-                <div>
-                    <p>Hi there</p>
-                    <span class="username username--big">morgan oakley</span>
+                <img src="images/avatar/woman-head-dark.svg" alt="profile icon" class="avatar avatar--big">
+                <div class="user__greeting">
+                    <p class="user__text">Hi there</p>
+                    <span class="user__name user__name--big">morgan oakley</span>
                     <span class="user__handle">@morgan</span>
 
                 </div>
             </div>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li><a class="nav__link" href="#">Nav-item</a></li>
-                    <li><a class="nav__link" href="#">Nav-item</a></li>
-                    <li><a class="nav__link" href="#">Nav-item</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">user</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">upload</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">share</a></li>
                 </ul>
             </nav>
         </div>
