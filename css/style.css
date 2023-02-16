@@ -51,16 +51,7 @@ body {
 		"search notification"
 		"user nav"
 		/1fr 1fr;
-}
-.header div {
-	border: 1px solid red;
-}
-
-.header__item {
-	display: flex;
-	justify-content: space-between;
-	padding: 0 2rem;
-	border: 1px solid blue;
+	padding: 0 2.5rem;
 }
 
 /* search bar styling */
@@ -85,8 +76,10 @@ body {
 .notification {
 	grid-area: notification;
 	display: flex;
-	justify-content: space-around;
-	inline-size: 20%;
+	justify-self: end;
+	justify-content: space-between;
+	align-items: center;
+	inline-size: 40%;
 }
 
 .user__name {
@@ -106,8 +99,8 @@ body {
 }
 
 .avatar.avatar--big {
-	block-size: 50px;
-	align-self: flex-end;
+	block-size: 35px;
+	align-self: center;
 	margin-right: 1rem;
 }
 
@@ -115,7 +108,8 @@ body {
 	margin: 0;
 }
 
-.user__name.user__name--big {
+.user__name.user__name--big,
+.user__handle {
 	font-weight: 700;
 }
 
@@ -123,26 +117,21 @@ body {
 
 .nav {
 	grid-area: nav;
+	justify-self: end;
+	justify-content: space-between;
+	inline-size: 55%;
 	display: flex;
 	justify-content: space-between;
-	width: 25%;
-	border: 1px solid red;
 }
 
-.nav__list {
-	display: flex;
-	justify-content: space-between;
-	list-style-type: none;
-	inline-size: 100%;
-	border: 1px solid red;
-}
-
-.nav__item {
-	background-color: cyan;
-}
-
-.nav__link {
+.nav__btn {
 	color: #fff;
+	background-color: cyan;
+	text-transform: capitalize;
+	width: 100px;
+	padding: 0.5rem;
+	border-style: none;
+	border-radius: 30px;
 }
 
 /* sidebar styles */
@@ -194,13 +183,11 @@ body {
 .announcement {
 	grid-column: content-col-start 3;
 	grid-row: content-row-start;
-	border: 1px solid red;
 }
 
 .trending {
 	grid-column: content-col-start 3;
 	grid-row: content-row-start 2 / span 2;
-	border: 1px solid red;
 }
 /* projects styling */
 
@@ -234,7 +221,6 @@ body {
 	list-style-type: none;
 	background-color: #fff;
 	inline-size: 80%;
-	border: 1px solid red;
 }
 
 .announcement__heading {
@@ -260,17 +246,11 @@ body {
 .trending__list {
 	background-color: #fff;
 	inline-size: 80%;
-	border: 1px solid red;
 }
 
 .trending__item {
 	display: flex;
 	align-items: center;
-}
-
-.trending__item .avatar {
-	block-size: 30px;
-	margin-right: 1rem;
 }
 
 .trending__item p {
