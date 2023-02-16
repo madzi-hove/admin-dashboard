@@ -173,6 +173,13 @@ body {
 }
 
 /* general content styles */
+.content__heading {
+	text-transform: capitalize;
+}
+
+.projects h2 {
+	margin-left: 2.5rem;
+}
 
 .projects {
 	grid-column: content-col-start / span 2;
@@ -210,6 +217,7 @@ body {
 
 .projects__heading {
 	margin: 1.5rem 0 0;
+	text-transform: capitalize;
 }
 
 .projects__text {
@@ -224,6 +232,7 @@ body {
 }
 
 .announcement__heading {
+	text-transform: capitalize;
 	padding: 1rem 0 0 0;
 	margin: 0;
 }
