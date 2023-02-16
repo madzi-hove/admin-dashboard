@@ -45,7 +45,13 @@ body {
 }
 
 /* general header styles */
-
+.header {
+	display: grid;
+	grid-template:
+		"search notification"
+		"user nav"
+		/1fr 1fr;
+}
 .header div {
 	border: 1px solid red;
 }
@@ -59,7 +65,7 @@ body {
 
 /* search bar styling */
 .search {
-	inline-size: 50%;
+	grid-area: search;
 }
 
 .search__btn {
@@ -77,6 +83,7 @@ body {
 /* notifications styling */
 
 .notification {
+	grid-area: notification;
 	display: flex;
 	justify-content: space-around;
 	inline-size: 20%;
@@ -92,15 +99,16 @@ body {
 
 /* user greeting styling */
 
+.user {
+	grid-area: user;
+	display: flex;
+	align-items: center;
+}
+
 .avatar.avatar--big {
 	block-size: 50px;
 	align-self: flex-end;
 	margin-right: 1rem;
-}
-
-.user {
-	display: flex;
-	align-items: center;
 }
 
 .user__text {
@@ -114,6 +122,7 @@ body {
 /* nav styling */
 
 .nav {
+	grid-area: nav;
 	display: flex;
 	justify-content: space-between;
 	width: 25%;
@@ -128,10 +137,50 @@ body {
 	border: 1px solid red;
 }
 
+.nav__item {
+	background-color: cyan;
+}
+
+.nav__link {
+	color: #fff;
+}
+
 /* sidebar styles */
+.sidebar {
+	color: #fff;
+}
 .dashboard {
 	font-size: 2.5rem;
 	vertical-align: middle;
+}
+
+.tools ul {
+	list-style-type: none;
+}
+
+.tools ul:first-child {
+	margin-bottom: 3rem;
+}
+
+.sidebar__heading,
+.sidebar__text {
+	text-transform: capitalize;
+}
+
+.list__item {
+	margin: 1rem 0;
+}
+
+.sidebar__link {
+	display: flex;
+	align-items: center;
+	color: #fff;
+
+	text-decoration: none;
+}
+
+.sidebar__icon {
+	margin-right: 1rem;
 }
 
 /* general content styles */
