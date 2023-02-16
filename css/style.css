@@ -4,6 +4,7 @@
 
 .material-symbols-outlined {
 	font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+	fill: white;
 }
 
 html {
@@ -15,7 +16,9 @@ body {
 	grid-template-columns: repeat(12, [body-col-start] 1fr);
 	grid-template-rows: repeat(12, [body-row-start] 1fr);
 	font-family: "Inter", sans-serif;
-	block-size: 100%;
+	/* font-size: 10px; */
+	max-block-size: 100%;
+	line-height: 1;
 }
 
 .header {
@@ -34,6 +37,11 @@ body {
 	grid-column: body-col-start 3 / span 11;
 	grid-row: body-row-start 2 / span 11;
 	background-color: lightcyan;
+	/* gap: 2rem; */
+
+	display: grid;
+	grid-template-columns: repeat(3, [content-col-start] 1fr);
+	grid-template-rows: repeat(3, [content-row-start] 1fr);
 }
 
 /* general header styles */
@@ -99,7 +107,6 @@ body {
 }
 
 .user__name.user__name--big {
-	font-size: 1.5rem;
 	font-weight: 700;
 }
 
@@ -121,23 +128,95 @@ body {
 }
 
 /* sidebar styles */
+.dashboard {
+	font-size: 2.5rem;
+	vertical-align: middle;
+}
 
 /* general content styles */
 
-.content {
-	display: grid;
-	grid-template-columns: repeat(3, [content-col-start] 1fr);
-	grid-template-rows: repeat(3, [content-row-start] 1fr);
-}
-
-/* projects styling */
-
 .projects {
 	grid-column: content-col-start / span 2;
-	grid-row: content-row-start / span 2;
+	grid-row: content-row-start / span 3;
+	margin-right: 2rem;
 }
+
+.announcement {
+	grid-column: content-col-start 3;
+	grid-row: content-row-start;
+	border: 1px solid red;
+}
+
+.trending {
+	grid-column: content-col-start 3;
+	grid-row: content-row-start 2 / span 2;
+	border: 1px solid red;
+}
+/* projects styling */
 
 .projects__list {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+	list-style-type: none;
+}
+
+/* project item styling */
+
+.projects__item {
+	display: grid;
+	border-left: 5px solid orange;
+	padding: 0 1rem 1rem;
+	border-radius: 8px;
+	background-color: #fff;
+}
+
+.projects__heading {
+	margin: 1.5rem 0 0;
+}
+
+.projects__text {
+	margin-top: 0;
+}
+
+/* announcements styling */
+.announcement__list {
+	list-style-type: none;
+	background-color: #fff;
+	inline-size: 80%;
+	border: 1px solid red;
+}
+
+.announcement__heading {
+	padding: 1rem 0 0 0;
+	margin: 0;
+}
+
+.announcement__item {
+	padding-right: 2rem;
+}
+
+.announcement__text {
+	font-size: 13px;
+	padding-bottom: 1rem;
+	margin: 0;
+}
+
+.border-line {
+	border-bottom: 1px solid lightgrey;
+}
+
+/* trending styling */
+.trending__list {
+	background-color: #fff;
+	inline-size: 80%;
+	border: 1px solid red;
+}
+
+.trending__item {
+	display: flex;
+}
+
+.trending__item p {
+	margin: 0.4rem 0;
 }
