@@ -30,7 +30,7 @@ body {
 .sidebar {
 	grid-column: body-col-start / span 2;
 	grid-row: body-row-start / span 12;
-	background-color: cyan;
+	background-color: #3e54ac;
 }
 
 .content {
@@ -127,7 +127,7 @@ body {
 
 .nav__btn {
 	color: #fff;
-	background-color: cyan;
+	background-color: #3e54ac;
 	text-transform: capitalize;
 	width: 100px;
 	padding: 0.5rem;
